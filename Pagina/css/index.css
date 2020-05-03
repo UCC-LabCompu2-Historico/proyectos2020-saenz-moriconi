@@ -12,15 +12,15 @@ body .main .titulo{
     font-family: monospace;
     font-size: 7em;
     text-align: center;
-    color: #0e543d;
+    color: #04422b;
 }
 
 body .main .descripcion{
     font-size: 2em;
-    color: #105f45;
+    color: #089c8c;
 }
 
 header nav ul li a:hover{
-    background: #105f45;
+    background: #04422b;
     font-size: 1.1em;
 }
