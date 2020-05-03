@@ -1,0 +1,26 @@
+header{
+    height: 650px;
+    background-image: url("../Imagenes/Fondo.png");
+    background-repeat: round;
+}
+
+header nav{
+    overflow: hidden;
+}
+
+body .main .titulo{
+    font-family: monospace;
+    font-size: 7em;
+    text-align: center;
+    color: #0e543d;
+}
+
+body .main .descripcion{
+    font-size: 2em;
+    color: #105f45;
+}
+
+header nav ul li a:hover{
+    background: #105f45;
+    font-size: 1.1em;
+}

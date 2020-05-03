@@ -9,13 +9,64 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/simulador.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
+  <header>
+    <h1 class="titulo">Simulador</h1>
+    <nav>
+      <ul>
+        <li><a href="simulador.html">SIMULADOR</a></li>
+        <li><a href="teoria.html">TEORÍA</a></li>
+        <li><a href="index.html">INICIO</a></li>
+      </ul>
+    </nav>
+  </header>
 
+
+  <section class="main">
+
+    <div id="grafico">
+      <canvas>
+
+      </canvas>
+    </div>
+
+    <div id="fomrulario">
+      <form>
+        <fieldset><legend>Ingrese los siguientes datos:</legend>
+          <label for="velocidad"></label>
+          <input id="velocidad" type="number" min="20" max="55" name="velocidad" placeholder="Velocidad en m/s">
+          <label for="angulo"></label>
+          <input id="angulo" type="number" min="" max="" name="angulo" placeholder="Ángulo en grados">
+          <label for="alturainicial"></label>
+          <input id="alturainicial" type="number" max="" name="altura inicial" placeholder="Altura inicial en metros">
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="resultados">
+      <h2>Resultados:</h2>
+      <label for="tiempo"></label>
+      <output id="tiempo" type="number">Tiempo</output>
+      <label for="distancia"></label>
+      <output id="distancia" type="number">Distancia</output>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    <h4>
+      Lautaro Saenz - Justo Moriconi - 2020.
+    </h4>
+  </footer>
+`
 
 </body>
 

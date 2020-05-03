@@ -1,0 +1,16 @@
+header{
+    background: #105f45;
+}
+
+header h1{
+    color: #ffffff;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+header nav ul li a:hover{
+    background: #0e543d;
+}
+

@@ -7,26 +7,15 @@ body{
   background: #f2f2f2;
 }
 
-header , main , footer{
+header , footer , section {
   margin: auto;
   width: 90%;
   max-width: 1300px;
 }
 
-main , footer {
-  margin-top: 50px;
-}
-
 header{
-  height: 650px;
-  background-image: url("../Imagenes/Fondo.png");
-  background-repeat: round;
-}
-
-header nav{
   overflow: hidden;
 }
-
 header nav ul{
   list-style-type: none;
 }
@@ -42,9 +31,8 @@ header nav ul li a{
   text-decoration: none;
 }
 
-header nav ul li a:hover{
-  background: #105f45;
-  font-size: 1.1em;
+main , footer {
+  margin-top: 50px;
 }
 
 footer{
@@ -53,16 +41,4 @@ footer{
   background: #0e543d;
   text-align: center;
   font-size: 1.5em;
-}
-
-main .titulo{
-  font-family: monospace;
-  font-size: 7em;
-  text-align: center;
-  color: #0e543d;
-}
-
-main .descripcion{
-  font-size: 2em;
-  color: #105f45;
 }
