@@ -9,7 +9,6 @@ header nav{
 }
 
 body .main .titulo{
-    font-family: monospace;
     font-size: 7em;
     text-align: center;
     color: #04422b;
@@ -17,6 +16,5 @@ body .main .titulo{
 
 body .main .descripcion{
     font-size: 2em;
-    color: #089c8c;
+    color: #04422b;
 }
-
