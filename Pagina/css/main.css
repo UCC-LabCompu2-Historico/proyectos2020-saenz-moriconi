@@ -42,3 +42,16 @@ footer{
   text-align: center;
   font-size: 1.5em;
 }
+
+header nav ul li a:hover{
+  background: #04422b;
+  font-size: 1.1em;
+}
+
+header nav ul li a:visited{
+  text-decoration: none;
+}
+
+header nav ul li a:active{
+  background: #1c8c84;
+}

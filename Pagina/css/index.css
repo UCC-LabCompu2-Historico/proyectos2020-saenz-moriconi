@@ -20,7 +20,3 @@ body .main .descripcion{
     color: #089c8c;
 }
 
-header nav ul li a:hover{
-    background: #04422b;
-    font-size: 1.1em;
-}
