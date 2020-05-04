@@ -10,7 +10,7 @@ header h1{
     float: left;
 }
 
-input[type=number]{
-
+#formulario input[type=number]{
+    font-family: monospace;
 }
 
