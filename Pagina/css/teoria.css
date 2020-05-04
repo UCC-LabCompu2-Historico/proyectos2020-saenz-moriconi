@@ -1,7 +1,7 @@
 header{
     background: #089c8c;
     overflow: hidden;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
