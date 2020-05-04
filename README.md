@@ -1,5 +1,6 @@
 # Tiro oblicuo
-Se denomina movimiento parabólico, al movimiento realizado por cualquier objeto cuya trayectoria describe una parábola.
+Se denomina Tiro oblicuo, al movimiento realizado por cualquier objeto cuya trayectoria describe una parábola.
+
 ## Autores
 - Saenz, Lautaro
 - Moriconi, Justo
