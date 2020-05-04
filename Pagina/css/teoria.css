@@ -1,0 +1,52 @@
+header{
+    background: #089c8c;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    color: #ffffff;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.main{
+    padding: 50px;
+    font-size: 2em;
+}
+
+.introduccion{
+    padding-bottom: 50px;
+}
+
+#ejemplo , #titulocaract , #imagen{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+}
+
+.titulo{
+    font-size: 2em;
+}
+
+#ejemplo{
+    text-align: left;
+}
+
+#ejemplo , #titulocaract{
+    font-size: 2em;
+}
+
+#imagen , #video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

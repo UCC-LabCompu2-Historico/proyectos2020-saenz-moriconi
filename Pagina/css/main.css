@@ -4,7 +4,9 @@
 }
 
 body{
+  color: #04422b;
   background: #f2f2f2;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 header , footer , section {
@@ -13,9 +15,6 @@ header , footer , section {
   max-width: 1300px;
 }
 
-header{
-  overflow: hidden;
-}
 header nav ul{
   list-style-type: none;
 }
@@ -53,4 +52,9 @@ header nav ul li a:visited{
 
 header nav ul li a:active{
   background: #1c8c84;
+}
+
+h1 , h2{
+  color: #04422b;
+  font-size: 3em;
 }

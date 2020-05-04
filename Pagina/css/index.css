@@ -5,19 +5,16 @@ header{
 }
 
 header nav{
-    font-family: "Comic Sans MS";
     overflow: hidden;
 }
 
 body .main .titulo{
-    font-family: "Comic Sans MS";
-    font-size: 7em;
+    font-size: 6em;
     text-align: center;
     color: #04422b;
 }
 
 body .main .descripcion{
     font-size: 2em;
-    font-family: "Comic Sans MS";
     color: #04422b;
 }

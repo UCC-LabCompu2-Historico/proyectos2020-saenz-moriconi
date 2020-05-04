@@ -1,9 +1,16 @@
 header{
     background: #089c8c;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.main{
+    margin-top: 100px;
 }
 
 header h1{
-    font-family: "Comic Sans MS";
     color: #ffffff;
     overflow: hidden;
     padding: 0;
@@ -11,7 +18,19 @@ header h1{
     float: left;
 }
 
-#formulario input[type=number]{
-    font-family: "Comic Sans MS";
+.titulo{
+    font-size: 2em;
 }
 
+fieldset{
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+input [type=number]{
+
+}
+
+::placeholder{
+
+}
