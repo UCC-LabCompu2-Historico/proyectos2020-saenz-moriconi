@@ -3,6 +3,7 @@ header{
 }
 
 header h1{
+    font-family: "Comic Sans MS";
     color: #ffffff;
     overflow: hidden;
     padding: 0;
@@ -11,6 +12,6 @@ header h1{
 }
 
 #formulario input[type=number]{
-    font-family: monospace;
+    font-family: "Comic Sans MS";
 }
 
