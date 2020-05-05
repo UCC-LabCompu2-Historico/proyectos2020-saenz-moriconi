@@ -9,3 +9,4 @@ Se denomina Tiro oblicuo, al movimiento realizado por cualquier objeto cuya tray
 - css
 
 ## Link al sitio
+[Tiro oblicuo](https://ucc-labcompu2.github.io/proyectos2020-saenz-moriconi)
