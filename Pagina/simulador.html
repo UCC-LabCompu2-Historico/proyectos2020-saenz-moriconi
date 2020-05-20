@@ -35,11 +35,23 @@
     <div id="formulario">
         <fieldset><legend>Ingrese los siguientes datos:</legend>
           <label for="velocidad"></label>
-          <input id="velocidad" type="number" min="20" max="55" name="velocidad" placeholder="Velocidad en m/s">
+          <input id="velocidad" type="text" name="velocidad" placeholder="Velocidad">
+          <label for="unidad_velocidad">
+            <select id="unidad_velocidad">
+              <option>m/s</option>
+              <option>km/h</option>
+            </select>
+          </label>
           <label for="angulo"></label>
-          <input id="angulo" type="number" min="" max="" name="angulo" placeholder="Ángulo en grados">
+          <input id="angulo" type="text" name="angulo" placeholder="Ángulo">
+          <label for="unidad_angulo">
+          <select id="unidad_angulo">
+            <option>Grados</option>
+            <option>Radianes</option>
+          </select>
+          </label>
           <label for="alturainicial"></label>
-          <input id="alturainicial" type="number" max="" name="altura inicial" placeholder="Altura inicial en metros">
+          <input id="alturainicial" name="altura inicial" placeholder="Altura inicial en metros">
         </fieldset>
     </div>
 
