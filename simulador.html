@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/simulador.css">
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <link rel="icon" href="Imagenes/favicon.ico">
+  <script type="text/javascript" src="javascript/main.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
   <div id="formulario">
     <fieldset><legend>Ingrese los siguientes datos:</legend>
       <label for="velocidad"></label>
-      <input id="velocidad" type="text" name="velocidad" placeholder="Velocidad">
+      <input id="velocidad" type="text" name="velocidad" placeholder="Velocidad inicial" required>
       <label for="unidad_velocidad">
         <select id="unidad_velocidad">
           <option name="m/s">m/s</option>
@@ -45,7 +46,7 @@
         </select>
       </label>
       <label for="angulo"></label>
-      <input id="angulo" type="text" name="angulo" placeholder="Ángulo">
+      <input id="angulo" type="text" name="angulo" placeholder="Ángulo" required>
       <label for="unidad_angulo">
         <select id="unidad_angulo">
           <option name="grados">Grados</option>
@@ -53,12 +54,19 @@
         </select>
       </label>
       <label for="alturainicial"></label>
-      <input id="alturainicial" name="altura inicial" placeholder="Altura inicial en metros">
+      <input id="alturainicial" type="text" name="altura_incial" placeholder="Altura inicial en metros" required>
+      <button id="calcular" name="calcular" onclick="tiroparabolico()">Calcular</button>
     </fieldset>
   </div>
 
   <div id="resultados">
     <h2>Resultados:</h2>
+    <p>Distancia recorrida: <span id="distancia"></span></p>
+
+    <p>Tiempo en suspensión: <span id="tiempo"></span></p>
+
+    <p>Altura maxima: <span id="alturamax"></span></p>
+
   </div>
 
 </section>
