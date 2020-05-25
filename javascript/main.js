@@ -40,17 +40,4 @@ function tiroparabolico(){
     document.getElementById("distancia").innerHTML = " " + distancia + " m.";
     document.getElementById("tiempo").innerHTML = " " + tiempo + " s.";
     document.getElementById("alturamax").innerHTML = " " + altmax + " m.";
-
-
-
-    console.log(velocidad);
-    console.log(unidadvel);
-    console.log(angulo);
-    console.log(unidadang);
-    console.log(altini);
-    console.log(velx);
-    console.log(tiempo);
-    console.log(distancia);
-    console.log(altmax);
-
 }
