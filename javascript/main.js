@@ -11,8 +11,11 @@ function tiroparabolico(){
     unidadang = document.getElementById("unidad_angulo").value;
     altini = document.getElementsByName("altura_incial")[0].value;
 
-
-
+    if(velocidad.includes(",") || angulo.includes(",") || altini.includes(",")){
+        velocidad = velocidad.replace("," , ".");
+        angulo = angulo.replace("," , ".");
+        altini = altini.replace("," , ".");
+    }
 
     if(isNaN(velocidad) || isNaN(angulo) || isNaN(altini)){
         alert("Los datos deben ser números");
