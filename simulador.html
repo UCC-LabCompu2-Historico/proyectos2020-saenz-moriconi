@@ -35,7 +35,8 @@
     </canvas>
   </div>
 
-  <div id="formulario">
+  <div>
+    <form id="formulario">
     <fieldset><legend>Ingrese los siguientes datos:</legend>
       <label for="velocidad"></label>
       <input id="velocidad" type="text" name="velocidad" placeholder="Velocidad inicial" required>
@@ -55,8 +56,10 @@
       </label>
       <label for="alturainicial"></label>
       <input id="alturainicial" type="text" name="altura_incial" placeholder="Altura inicial en metros" required>
-      <button id="calcular" name="calcular" onclick="tiroparabolico()">Calcular</button>
+      <button type="button" id="calcular" name="calcular" onclick="tiroparabolico()">Calcular</button>
+      <button type="button" name="resetear_datos" onclick="resetear()">Reset</button>
     </fieldset>
+    </form>
   </div>
 
   <div id="resultados">

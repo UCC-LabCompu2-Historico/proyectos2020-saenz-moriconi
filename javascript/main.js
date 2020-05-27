@@ -1,3 +1,7 @@
+function resetear() {
+    document.getElementById("formulario").reset();
+}
+
 function tiroparabolico(){
     var velocidad , unidadvel, unidadang, altini , angulo , velx , vely, distancia , tiempo , tiempaltmax , altmax;
 
@@ -6,6 +10,9 @@ function tiroparabolico(){
     angulo = document.getElementsByName("angulo")[0].value;
     unidadang = document.getElementById("unidad_angulo").value;
     altini = document.getElementsByName("altura_incial")[0].value;
+
+
+
 
     if(isNaN(velocidad) || isNaN(angulo) || isNaN(altini)){
         alert("Los datos deben ser números");
@@ -23,9 +30,9 @@ function tiroparabolico(){
         angulo = angulo * Math.PI / 180;
     }
 
-    velx = velocidad * Math.cos(angulo);
+    velx = Math.round(velocidad * Math.cos(angulo) *100)/100;
 
-    vely = velocidad * Math.sin(angulo);
+    vely = Math.round(velocidad * Math.sin(angulo) *100)/100;
 
     tiempo = Math.round(((altini+vely)/4.9)*100)/100;
 
@@ -40,4 +47,6 @@ function tiroparabolico(){
     document.getElementById("distancia").innerHTML = " " + distancia + " m.";
     document.getElementById("tiempo").innerHTML = " " + tiempo + " s.";
     document.getElementById("alturamax").innerHTML = " " + altmax + " m.";
+
+    console.log(altini);
 }
