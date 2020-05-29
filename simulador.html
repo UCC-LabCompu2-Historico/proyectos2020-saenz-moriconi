@@ -41,7 +41,7 @@
       <label for="velocidad"></label>
       <input id="velocidad" type="text" name="velocidad" placeholder="Velocidad inicial" required>
       <label for="unidad_velocidad">
-        <select id="unidad_velocidad">
+        <select id="unidad_velocidad" name="unidad_velocidad">
           <option name="m/s">m/s</option>
           <option name="km/h">km/h</option>
         </select>
@@ -49,14 +49,14 @@
       <label for="angulo"></label>
       <input id="angulo" type="text" name="angulo" placeholder="Ángulo" required>
       <label for="unidad_angulo">
-        <select id="unidad_angulo">
+        <select id="unidad_angulo" name="unidad_angulo">
           <option name="grados">Grados</option>
           <option name="radianes">Radianes</option>
         </select>
       </label>
       <label for="alturainicial"></label>
       <input id="alturainicial" type="text" name="altura_incial" placeholder="Altura inicial en metros" required>
-      <button type="button" id="calcular" name="calcular" onclick="tiroparabolico()">Calcular</button>
+      <button type="button" id="calcular" name="calcular" onclick="tiroParabolico(velocidad.value , unidad_velocidad.value , angulo.value , unidad_angulo.value , altura_incial.value)">Calcular</button>
       <button type="button" name="resetear_datos" onclick="resetear()">Reset</button>
     </fieldset>
     </form>
