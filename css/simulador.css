@@ -7,8 +7,6 @@ header{
 }
 
 .main{
-    padding: 50px;
-    margin-top: 100px;
 }
 
 header h1{
@@ -34,4 +32,28 @@ input [type=number]{
 
 ::placeholder{
 
+}
+
+#resultados span{
+    color: #089c8c;
+}
+
+
+.resul{
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+#grafico{
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+
+#myCanvas{
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #04422b;
+    margin: 10px;
+    margin-bottom: 1px;
+    margin-left: 150px;
 }

@@ -13,7 +13,7 @@
   <script type="text/javascript" src="javascript/main.js"></script>
 </head>
 
-<body>
+<body class="simlator" onload="dibujarEjes()">
 
 <header>
   <h1 class="titulo">Simulador</h1>
@@ -30,7 +30,7 @@
 <section class="main">
 
   <div id="grafico">
-    <canvas id="myCanvas" width="300px" height="300px">
+    <canvas id="myCanvas" width="1000px" height="600px">
       Tu navegador no soporta el tag de HTML5 canvas.
     </canvas>
   </div>
@@ -64,11 +64,11 @@
 
   <div id="resultados">
     <h2>Resultados:</h2>
-    <p>Distancia recorrida: <span id="distancia"></span></p>
+    <p class="resul">Distancia recorrida: <span id="distancia"></span></p>
 
-    <p>Tiempo en suspensión: <span id="tiempo"></span></p>
+    <p class="resul">Tiempo en suspensión: <span id="tiempo"></span></p>
 
-    <p>Altura maxima: <span id="alturamax"></span></p>
+    <p class="resul">Altura maxima: <span id="alturamax"></span></p>
 
   </div>
 
