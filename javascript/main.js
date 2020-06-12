@@ -65,7 +65,7 @@ function tiroParabolico(velocidad , unidadvel , angulo , unidadang , altini){
         angulo = angulo * Math.PI / 180;
     }
 
-        //calculo el tiempo final.
+    //calculo el tiempo final.
     if (altini === 0) {
         tiempo = calculoTSinAI(velocidad, angulo);
     } else {
