@@ -266,7 +266,7 @@ function dibujar(distancia , altura , altini){
     var margenY = 60;
     var color = dame_color_aleatorio();
 
-    console.log(altura , altini , distancia);
+    //Dibujo grafico.
     ctx.beginPath();
     ctx.moveTo(margenX , alturaMax - margenY - altini);
     ctx.quadraticCurveTo((distancia/2) + margenX , alturaMax - margenY - altura*2 , distancia + margenX , alturaMax - margenY);
