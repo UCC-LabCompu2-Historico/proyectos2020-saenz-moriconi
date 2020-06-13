@@ -12,4 +12,4 @@ pagina que contiene teoria sobre el tiro oblicuo, y ademas un simulador, que gra
 - css
 
 ## Link al sitio
-[Tiro oblicuo](https://ucc-labcompu2.github.io/proyectos2020-saenz-moriconi)
+[Tiro oblicuo](https://github.com/UCC-LabCompu2/proyectos2020-saenz-moriconi)
