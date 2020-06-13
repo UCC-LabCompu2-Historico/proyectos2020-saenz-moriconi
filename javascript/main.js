@@ -1,3 +1,13 @@
+/**
+ * Funcion que calcula el tiempo en suspension, la distancia recorrida y la altura maxima que alcanza un objeto en el movimiento parabolico.
+ * @method tiroParabolico.
+ * @param {number} velocidad    - velocidad inicial para el objeto.
+ * @param {string} unidadvel    - unidad en que se encuentra la velocidad (m/s o km/h).
+ * @param {number} angulo       - angulo del objeto al ser lanzado.
+ * @param {string} unidadang    - unidad en que se encuentra el angulo (grados o radiane).
+ * @param {number} altini       - altura inicial del objeto en metros.
+ * @return
+ */
 function tiroParabolico(velocidad , unidadvel , angulo , unidadang , altini){
     var distancia , tiempo , altmax , tiempoAltMax;
 
@@ -93,6 +103,11 @@ function tiroParabolico(velocidad , unidadvel , angulo , unidadang , altini){
     dibujar(distancia, altmax , altini);
 }
 
+/**
+ * Funcion que dibuja los ejes de coordenadas en canvas.
+ * @method dibujarEjes.
+ * @return
+ */
 function dibujarEjes() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
@@ -209,11 +224,20 @@ function dibujarEjes() {
     ctx.closePath();
 }
 
-function resetear() {
-    resetearFormulario();
-    resetearCanvas();
+/**
+ * Funcion que resetea los inputs del formulario.
+ * @method resetearFormulario.
+ * @return
+ */
+function resetearFormulario(){
+    document.getElementById("formulario").reset();
 }
 
+/**
+ * Funcion que limpia el lienzo.
+ * @method resetearCanvas
+ * @return
+ */
 function resetearCanvas(){
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
@@ -221,10 +245,22 @@ function resetearCanvas(){
     dibujarEjes();
 }
 
-function resetearFormulario(){
-    document.getElementById("formulario").reset();
+/**
+ * Funcion que limpia el lienzo y resetea los inputs del formulario.
+ * @method resetear
+ * @return
+ */
+function resetear() {
+    resetearFormulario();
+    resetearCanvas();
 }
 
+/**
+ * Funcion que reemplaza la coma por un punto en el input.
+ * @method comaxPunto
+ * @param {number} inp - valor del input.
+ * @return {number} inp - valor del input.
+ */
 function comaxPunto(inp){
     if(inp.includes(",")){
         inp = inp.replace("," , ".");
@@ -232,12 +268,27 @@ function comaxPunto(inp){
     return inp;
 }
 
+/**
+ * Funcion que calcula el tiempo en suspension del objeto, cuando este no tiene altura inicial.
+ * @method calculoTSinAI
+ * @param {number} velocidad    - velocidad inicial para el objeto.
+ * @param {number} angulo       - angulo del objeto al ser lanzado.
+ * @return {number} tiempo      - tiempo en suspension.
+ */
 function calculoTSinAI(velocidad , angulo) {
     var tiempo;
     tiempo = velocidad * Math.sin(angulo) / 4.9;
     return tiempo;
 }
 
+/**
+ * Funcion que calcula el tiempo en suspension del objeto, cuando este tiene altura inicial
+ * @method calculoTConAI.
+ * @param {number} velocidad    - velocidad inicial para el objeto.
+ * @param {number} angulo       - angulo del objeto al ser lanzado.
+ * @param {number} alturaini    - altura inicial del objeto en metros.
+ * @return {number} tiempo      - tiempo en suspension
+ */
 function calculoTConAI(velocidad , angulo , alturaini){
         var t1 , t2;
         t1 = (-(velocidad * Math.sin(angulo)) + Math.sqrt(((Math.pow(velocidad * Math.sin(angulo) , 2)) + (19.6 * alturaini))))/(-9.8);
@@ -248,12 +299,27 @@ function calculoTConAI(velocidad , angulo , alturaini){
         return t2;
 }
 
+/**
+ * Funcion que calcula el tiempo para cual el objeto se encuentra en su altura maxima.
+ * @method calculoTAltMax
+ * @param {number} velocidad        - velocidad inicial para el objeto.
+ * @param {number} angulo           - angulo del objeto al ser lanzado.
+ * @return {number} tiempoAltMax    - tiempo en su altura maxima.
+ */
 function calculoTAltMax(velocidad , angulo){
     var tiempoAltMax;
     tiempoAltMax = velocidad * Math.sin(angulo) / 9.8;
     return tiempoAltMax;
 }
 
+/**
+ * Funcion que dibuja la parabola en el lienzo.
+ * @method dibujar
+ * @param {number} distancia    - distancia final recorrida por el objeto.
+ * @param {number} altura       - altura maxima alcanzada por el objeto.
+ * @param {number} altini       - altura inicial del objeto.
+ * @return
+ */
 function dibujar(distancia , altura , altini){
     distancia = distancia *3;
     altini = altini *3;
@@ -276,13 +342,11 @@ function dibujar(distancia , altura , altini){
     ctx.closePath();
 }
 
-function aleatorio(inferior,superior){
-    numPosibilidades = superior - inferior;
-    aleat = Math.random() * numPosibilidades;
-    aleat = Math.floor(aleat);
-    return parseInt(inferior) + aleat;
-}
-
+/**
+ * Funcion que devuelve un color aleatorio en hexadecimal.
+ * @method dame_color_aleatorio.
+ * @return {string} color_aleatorio - color aleatorio.
+ */
 function dame_color_aleatorio(){
     hexadecimal = new Array("0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F");
     color_aleatorio = "#";
@@ -291,4 +355,18 @@ function dame_color_aleatorio(){
         color_aleatorio += hexadecimal[posarray];
     }
     return color_aleatorio;
+}
+
+/**
+ * Funcion que devuelve una posicion o numero aleatorio.
+ * @method aleatorio.
+ * @param {number} inferior - limite inferior.
+ * @param {number} superior - limite superior.
+ * @return {number}         - numero aleatorio.
+ */
+function aleatorio(inferior,superior){
+    numPosibilidades = superior - inferior;
+    aleat = Math.random() * numPosibilidades;
+    aleat = Math.floor(aleat);
+    return parseInt(inferior) + aleat;
 }
