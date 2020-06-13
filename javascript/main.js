@@ -259,7 +259,7 @@ function resetear() {
  * Funcion que reemplaza la coma por un punto en el input.
  * @method comaxPunto
  * @param {number} inp - valor del input.
- * @return {number} inp - valor del input.
+ * @return {number} inp - valor del input convertido.
  */
 function comaxPunto(inp){
     if(inp.includes(",")){
