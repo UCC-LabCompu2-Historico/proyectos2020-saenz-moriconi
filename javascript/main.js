@@ -29,7 +29,7 @@ function tiroParabolico(velocidad , unidadvel , angulo , unidadang , altini){
     //verifico que los datos esten dentro de los parametros.
     if(unidadvel === "m/s") {
         if (velocidad > 50 || velocidad < 20){
-            resetearFormulario();
+            resetearVelocidad();
             alert("la velocidad debe estar entre 20 y 50 m/s.");
             return;
         }
@@ -38,21 +38,15 @@ function tiroParabolico(velocidad , unidadvel , angulo , unidadang , altini){
 
     if(unidadvel === "km/h") {
         if (velocidad > 180 || velocidad < 70) {
-            resetearFormulario();
+            resetearVelocidad();
             alert("la velocidad debe estar entre 70 y 180 km/h.");
             return;
         }
     }
 
-    if(altini < 0 || altini > 40){
-        resetearFormulario();
-        alert("La altura inicial debe estar entre 0 y 40 metros.");
-        return
-    }
-
     if(unidadang === "Grados") {
         if(angulo <0 || angulo > 90){
-            resetearFormulario();
+            resetearAngulo();
             alert("El angulo debe estar entre 0 y 90 grados.");
             return;
         }
@@ -60,10 +54,16 @@ function tiroParabolico(velocidad , unidadvel , angulo , unidadang , altini){
 
     if(unidadang === "Radianes"){
         if(angulo <0 || angulo > 1.57){
-            resetearFormulario();
+            resetearAngulo();
             alert("El angulo debe estar entre 0 y 1.57 radianes.");
             return;
         }
+    }
+
+    if(altini < 0 || altini > 40){
+        resetearAltini();
+        alert("La altura inicial debe estar entre 0 y 40 metros.");
+        return
     }
 
     //convierto de km/h a m/s.
@@ -231,6 +231,33 @@ function dibujarEjes() {
  */
 function resetearFormulario(){
     document.getElementById("formulario").reset();
+}
+
+/**
+ * Funcion que resetea el input de velocidad.
+ * @method resetearVelocidad.
+ * @return
+ */
+function resetearVelocidad(){
+    document.getElementById("velocidad").value = "";
+}
+
+/**
+ * Funcion que resetea el input de angulo.
+ * @method resetearAngulo.
+ * @return
+ */
+function resetearAngulo(){
+    document.getElementById("angulo").value = "";
+}
+
+/**
+ * Funcion que resetea el input de altura inicial.
+ * @method resetearAltini.
+ * @return
+ */
+function resetearAltini(){
+    document.getElementById("alturainicial").value = "";
 }
 
 /**
